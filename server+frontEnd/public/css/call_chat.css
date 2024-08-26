@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    font-family: "Sen", sans-serif;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+            /* got from stack overflow */
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.nav{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navLeft{
+    margin-left: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+.navLeft > h2 > u{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+
+}
+.navLeft > h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navMid{
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+.navMid > p{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    color: #636262;
+}
+.navMid > p> u{
+    font-size: large;
+    font-weight: lighter;
+    padding: 6px;
+    background-color: #b5b5ed;
+    border-radius: 6px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+}
+
+i{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+
+.mainBody{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+
+#videoData{
+    height: auto;
+    width: 500px;
+    border: 2px solid #8c8cf3;
+}
+#url{
+    user-select: text;
+}
+
+
+.chat{
+    width: 25%;
+    height: 100vh;
+    justify-content: space-around;
+    background-color: rgb(194, 194, 194);
+    z-index: 50000000;
+    border-radius: 10px;
+}
+.leave{
+    background-color: #7777ea;
+    padding: 5px;
+    cursor: pointer;
+    
+}
+.leave > h3{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+.msg_container{
+    height: 87vh;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.message{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(190, 190, 190);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+}
+.message > p{
+    font-size: small;
+    margin: auto;
+    color: rgb(101, 98, 98);
+}
+.message_incomming{
+    padding: 8px;
+    min-width: 20%;
+    max-width: 70%;
+    overflow-wrap: break-word;
+    background-color: #8a868a;
+    border-radius: 0 8px 8px 8px;
+    justify-content: left;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 6px;
+}
+.message_outgoing{
+    padding: 8px;
+    min-width: 20%;
+    max-width: 70%;
+    overflow-wrap: break-word;
+    background-color: #b5b5ed;
+    border-radius: 8px 0 8px 8px;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+.message_outgoing > p{
+    color: rgb(249, 243, 243);
+    font-size: small;
+}
+.message_outgoing >h6{
+    color: rgb(98, 97, 97);
+}
+
+.send{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    background-color: rgb(147, 140, 140);
+    display: flex;
+}
+#message{
+    background-color: rgb(245, 245, 245);
+    width: 21.5%;
+    border-top: 1px solid black;
+}
+#button{
+    font-size: 30px;
+    color: rgb(255, 196, 0);
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    margin-right: 0;
+    border-top: 1px solid black;
+}

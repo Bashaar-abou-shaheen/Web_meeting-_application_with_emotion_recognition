@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" /> -->
+
+    <title>Results</title>
+  </head>
+
+<body>
+    <% if(users.length <= 0){ %>
+        <h1>No orders yet</h1>
+    <% }else{ %>
+        <ul>
+        <% users.forEach(user=>{ %>
+            <li>
+                <h1><%= user.user %></h1>
+                <h3>gender : <%= user.gender %></h2>
+                <ul>
+                    <li>
+                        Angry : <%= user.Angry%>
+                    </li>
+                    <li>
+                        Disgusted : <%= user.Disgusted%>
+                    </li><li>
+                        Fearful : <%= user.Fearful%>
+                    </li><li>
+                        Happy : <%= user.Happy%>
+                    </li><li>
+                        Neutral : <%= user.Neutral%>
+                    </li><li>
+                        Sad : <%= user.Sad%>
+                    </li><li>
+                        Surprised : <%= user.Surprised%>
+                    </li>
+
+                </ul>
+            </li>
+        <% }) %>
+        </ul>
+    <% } %>
+</body>
+</html>

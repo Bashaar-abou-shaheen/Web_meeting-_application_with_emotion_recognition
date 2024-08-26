@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- <link
+      rel="icon"
+      href="https://media.tenor.com/images/bebae0cf0d294c6c98445c8c890cd4d0/tenor.gif"
+    /> -->
+
+    <script
+      src="https://kit.fontawesome.com/599a9a29b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Meet me</title>
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="left">
+        <h2><u>Meet</u>me</h2>
+      </div>
+      <div class="right">
+        <h4 id="datetime"></h4>
+      </div>
+    </div>
+    <div class="mainBody">
+      <h1><u>Meet</u> me</h1>
+      <p>
+        End-to-End Encrypted Video Meetings.<br />
+      </p>
+      <div class="form">
+        <div class="meetNew">
+          <div class="name">
+            <i class="fas fa-signature"></i>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="User name"
+              required
+            />
+          </div>
+          <div class="newMeetBtn">
+            <p onclick="create_UUID()">
+              <i class="fas fa-video"></i>Start Meeting
+            </p>
+          </div>
+        </div>
+        <br />
+        <div class="meetJoin">
+          <div class="linkorid">
+            <i class="fas fa-keyboard"></i>
+            <input type="text" placeholder="Enter Meeting ID" id="linkorid" />
+          </div>
+          <div class="meetJoinBtn">
+            <p onclick="join_meeting()">Join Meeting</p>
+          </div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <p id="footer">
+        
+      </p>
+    </div>
+  </body>
+  <script></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</html>

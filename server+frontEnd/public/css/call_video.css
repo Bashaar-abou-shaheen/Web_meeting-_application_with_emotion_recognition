@@ -1,0 +1,117 @@
+.video {
+  width: 75%;
+  height: 100%;
+  background-color: #d8d5d5;
+  padding-top: 3px;
+  padding-left: 1px;
+  padding-right: 1px;
+  border-radius: 3px;
+  overflow-y: auto;
+}
+
+#video-grid {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#video-control {
+  height: 46px;
+  width: 75%;
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  bottom: 0;
+  z-index: 5000000;
+  border-top: 1px solid black;
+}
+.control_flex {
+  display: flex;
+  justify-content: space-around;
+}
+.control {
+  margin-top: 2px;
+  margin-left: 30%;
+  margin-bottom: 2px;
+  display: flex;
+}
+.control > i {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 20px;
+  color: rgb(179, 179, 179);
+  border: 1px solid rgb(224, 224, 224);
+  cursor: pointer;
+}
+.control > a {
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5px;
+}
+.control > i:hover {
+  border-color: rgb(155, 155, 155);
+}
+#hang-up {
+  color: rgb(255, 94, 94);
+}
+#hang-up:hover {
+  color: red;
+}
+#microphone:hover {
+  background-color: rgb(255, 101, 101);
+  color: rgb(231, 31, 31);
+}
+#videoMute:hover {
+  background-color: rgb(255, 101, 101);
+  color: rgb(243, 26, 26);
+}
+#share_screen {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #8c8cf3;
+  color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+#share_screen:hover {
+  background-color: #7777ea;
+}
+
+video {
+  width: 24%;
+  height: auto;
+}
+.videoElement {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 4px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+#video-grid.one-participant {
+  grid-template-columns: 1fr;
+}
+
+#video-grid.two-participants {
+  grid-template-columns: 1fr 1fr;
+}
+
+#video-grid.three-participants {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#video-grid.four-participants {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
